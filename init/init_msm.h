@@ -34,6 +34,7 @@
 
 #define PROP_HWROTATE    "ro.sf.hwrotation"
 #define PROP_LCDDENSITY  "ro.sf.lcd_density"
+#define PROP_LCDPERSIST_ORIENTATION  "persist.panel.orientation"
 #define PROP_QEMU_NAVKEY "qemu.hw.mainkeys"
 #define PROP_BOOT_BASEBAND "ro.boot.baseband"
 #define PROP_BLUETOOTH_SOC "qcom.bluetooth.soc"

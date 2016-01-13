@@ -67,7 +67,9 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
             property_set(PROP_LCDDENSITY, "480");
     } else if (virtual_size >= 720) {
         // For 720x1280 resolution
-        property_set(PROP_LCDDENSITY, "320");
+        property_set(PROP_LCDDENSITY, "160");
+        property_set(PROP_QEMU_NAVKEY, "1");
+	property_set(PROP_LCDPERSIST_ORIENTATION,"270");
     } else if (virtual_size >= 480) {
         // For 480x854 resolution QRD.
         property_set(PROP_LCDDENSITY, "240");
