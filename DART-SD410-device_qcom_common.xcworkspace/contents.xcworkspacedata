@@ -1,0 +1,830 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Android.mk">
+   </FileRef>
+   <Group
+      location = "group:appops"
+      name = "appops">
+      <FileRef
+         location = "group:appops_policy.xsd">
+      </FileRef>
+      <FileRef
+         location = "group:Android.mk">
+      </FileRef>
+      <FileRef
+         location = "group:appops_policy.xml">
+      </FileRef>
+      <FileRef
+         location = "group:README.txt">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:base.mk">
+   </FileRef>
+   <FileRef
+      location = "group:bdroid_buildcfg.h">
+   </FileRef>
+   <Group
+      location = "group:build"
+      name = "build">
+      <Group
+         location = "group:tasks"
+         name = "tasks">
+         <FileRef
+            location = "group:vendor_bootjars.mk">
+         </FileRef>
+      </Group>
+   </Group>
+   <FileRef
+      location = "group:build.sh">
+   </FileRef>
+   <FileRef
+      location = "group:common.mk">
+   </FileRef>
+   <FileRef
+      location = "group:common64.mk">
+   </FileRef>
+   <Group
+      location = "group:cryptfs_hw"
+      name = "cryptfs_hw">
+      <FileRef
+         location = "group:Android.mk">
+      </FileRef>
+      <FileRef
+         location = "group:cryptfs_hw.c">
+      </FileRef>
+      <FileRef
+         location = "group:cryptfs_hw.h">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:device"
+      name = "device">
+      <Group
+         location = "group:overlay"
+         name = "overlay">
+         <Group
+            location = "group:packages"
+            name = "packages">
+            <Group
+               location = "group:apps"
+               name = "apps">
+               <Group
+                  location = "group:Calendar"
+                  name = "Calendar">
+                  <Group
+                     location = "group:res"
+                     name = "res">
+                     <Group
+                        location = "group:values"
+                        name = "values">
+                        <FileRef
+                           location = "group:config.xml">
+                        </FileRef>
+                     </Group>
+                  </Group>
+               </Group>
+               <Group
+                  location = "group:Launcher2"
+                  name = "Launcher2">
+                  <Group
+                     location = "group:res"
+                     name = "res">
+                     <Group
+                        location = "group:xml"
+                        name = "xml">
+                        <FileRef
+                           location = "group:default_workspace.xml">
+                        </FileRef>
+                     </Group>
+                  </Group>
+               </Group>
+               <Group
+                  location = "group:Gallery2"
+                  name = "Gallery2">
+                  <Group
+                     location = "group:res"
+                     name = "res">
+                     <Group
+                        location = "group:layout-land"
+                        name = "layout-land">
+                        <FileRef
+                           location = "group:camera_controls.xml">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:values"
+                        name = "values">
+                        <FileRef
+                           location = "group:arrays.xml">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:layout-port"
+                        name = "layout-port">
+                        <FileRef
+                           location = "group:camera_controls.xml">
+                        </FileRef>
+                     </Group>
+                  </Group>
+               </Group>
+               <Group
+                  location = "group:Bluetooth"
+                  name = "Bluetooth">
+                  <Group
+                     location = "group:res"
+                     name = "res">
+                     <Group
+                        location = "group:values"
+                        name = "values">
+                        <FileRef
+                           location = "group:config.xml">
+                        </FileRef>
+                     </Group>
+                  </Group>
+               </Group>
+               <Group
+                  location = "group:Phone"
+                  name = "Phone">
+                  <Group
+                     location = "group:res"
+                     name = "res">
+                     <Group
+                        location = "group:values"
+                        name = "values">
+                        <FileRef
+                           location = "group:config.xml">
+                        </FileRef>
+                     </Group>
+                  </Group>
+               </Group>
+               <Group
+                  location = "group:SnapdragonCamera"
+                  name = "SnapdragonCamera">
+                  <Group
+                     location = "group:res"
+                     name = "res">
+                     <Group
+                        location = "group:values"
+                        name = "values">
+                        <FileRef
+                           location = "group:arrays.xml">
+                        </FileRef>
+                     </Group>
+                  </Group>
+               </Group>
+               <Group
+                  location = "group:CellBroadcastReceiver"
+                  name = "CellBroadcastReceiver">
+                  <Group
+                     location = "group:res"
+                     name = "res">
+                     <Group
+                        location = "group:values"
+                        name = "values">
+                        <FileRef
+                           location = "group:config.xml">
+                        </FileRef>
+                     </Group>
+                  </Group>
+               </Group>
+               <Group
+                  location = "group:Camera2"
+                  name = "Camera2">
+                  <Group
+                     location = "group:res"
+                     name = "res">
+                     <Group
+                        location = "group:layout-land"
+                        name = "layout-land">
+                        <FileRef
+                           location = "group:camera_controls.xml">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:values"
+                        name = "values">
+                        <FileRef
+                           location = "group:arrays.xml">
+                        </FileRef>
+                     </Group>
+                     <Group
+                        location = "group:layout-port"
+                        name = "layout-port">
+                        <FileRef
+                           location = "group:camera_controls.xml">
+                        </FileRef>
+                     </Group>
+                  </Group>
+               </Group>
+            </Group>
+            <Group
+               location = "group:services"
+               name = "services">
+               <Group
+                  location = "group:Telephony"
+                  name = "Telephony">
+                  <Group
+                     location = "group:res"
+                     name = "res">
+                     <Group
+                        location = "group:values"
+                        name = "values">
+                        <FileRef
+                           location = "group:config.xml">
+                        </FileRef>
+                     </Group>
+                  </Group>
+               </Group>
+               <Group
+                  location = "group:Telecomm"
+                  name = "Telecomm">
+                  <Group
+                     location = "group:res"
+                     name = "res">
+                     <Group
+                        location = "group:values"
+                        name = "values">
+                        <FileRef
+                           location = "group:config.xml">
+                        </FileRef>
+                     </Group>
+                  </Group>
+               </Group>
+            </Group>
+         </Group>
+         <Group
+            location = "group:frameworks"
+            name = "frameworks">
+            <Group
+               location = "group:base"
+               name = "base">
+               <Group
+                  location = "group:core"
+                  name = "core">
+                  <Group
+                     location = "group:res"
+                     name = "res">
+                     <Group
+                        location = "group:res"
+                        name = "res">
+                        <Group
+                           location = "group:values-mcc310-mnc410"
+                           name = "values-mcc310-mnc410">
+                           <FileRef
+                              location = "group:config.xml">
+                           </FileRef>
+                        </Group>
+                        <Group
+                           location = "group:values-mcc310-mnc004"
+                           name = "values-mcc310-mnc004">
+                           <FileRef
+                              location = "group:config.xml">
+                           </FileRef>
+                        </Group>
+                        <Group
+                           location = "group:values"
+                           name = "values">
+                           <FileRef
+                              location = "group:public.xml">
+                           </FileRef>
+                           <FileRef
+                              location = "group:config.xml">
+                           </FileRef>
+                        </Group>
+                        <Group
+                           location = "group:drawable-xhdpi"
+                           name = "drawable-xhdpi">
+                           <FileRef
+                              location = "group:digital_pen_blocked_mic_yellow.png">
+                           </FileRef>
+                           <FileRef
+                              location = "group:digital_pen_active.png">
+                           </FileRef>
+                           <FileRef
+                              location = "group:digital_pen_blocked_mic_red.png">
+                           </FileRef>
+                           <FileRef
+                              location = "group:digital_pen_low_battery.png">
+                           </FileRef>
+                           <FileRef
+                              location = "group:digital_pen_positioning_problem.png">
+                           </FileRef>
+                           <FileRef
+                              location = "group:digital_pen_background_side_channel.png">
+                           </FileRef>
+                        </Group>
+                        <Group
+                           location = "group:drawable-xxhdpi"
+                           name = "drawable-xxhdpi">
+                           <FileRef
+                              location = "group:digital_pen_blocked_mic_yellow.png">
+                           </FileRef>
+                           <FileRef
+                              location = "group:digital_pen_active.png">
+                           </FileRef>
+                           <FileRef
+                              location = "group:digital_pen_blocked_mic_red.png">
+                           </FileRef>
+                           <FileRef
+                              location = "group:digital_pen_low_battery.png">
+                           </FileRef>
+                           <FileRef
+                              location = "group:digital_pen_positioning_problem.png">
+                           </FileRef>
+                           <FileRef
+                              location = "group:digital_pen_background_side_channel.png">
+                           </FileRef>
+                        </Group>
+                        <Group
+                           location = "group:xml"
+                           name = "xml">
+                           <FileRef
+                              location = "group:storage_list.xml">
+                           </FileRef>
+                        </Group>
+                        <Group
+                           location = "group:drawable-hdpi"
+                           name = "drawable-hdpi">
+                           <FileRef
+                              location = "group:digital_pen_blocked_mic_yellow.png">
+                           </FileRef>
+                           <FileRef
+                              location = "group:digital_pen_active.png">
+                           </FileRef>
+                           <FileRef
+                              location = "group:digital_pen_blocked_mic_red.png">
+                           </FileRef>
+                           <FileRef
+                              location = "group:digital_pen_low_battery.png">
+                           </FileRef>
+                           <FileRef
+                              location = "group:digital_pen_positioning_problem.png">
+                           </FileRef>
+                           <FileRef
+                              location = "group:digital_pen_background_side_channel.png">
+                           </FileRef>
+                        </Group>
+                        <Group
+                           location = "group:drawable-ldpi"
+                           name = "drawable-ldpi">
+                           <FileRef
+                              location = "group:digital_pen_blocked_mic_yellow.png">
+                           </FileRef>
+                           <FileRef
+                              location = "group:digital_pen_active.png">
+                           </FileRef>
+                           <FileRef
+                              location = "group:digital_pen_blocked_mic_red.png">
+                           </FileRef>
+                           <FileRef
+                              location = "group:digital_pen_low_battery.png">
+                           </FileRef>
+                           <FileRef
+                              location = "group:digital_pen_positioning_problem.png">
+                           </FileRef>
+                           <FileRef
+                              location = "group:digital_pen_background_side_channel.png">
+                           </FileRef>
+                        </Group>
+                        <Group
+                           location = "group:drawable-mdpi"
+                           name = "drawable-mdpi">
+                           <FileRef
+                              location = "group:digital_pen_blocked_mic_yellow.png">
+                           </FileRef>
+                           <FileRef
+                              location = "group:digital_pen_active.png">
+                           </FileRef>
+                           <FileRef
+                              location = "group:digital_pen_blocked_mic_red.png">
+                           </FileRef>
+                           <FileRef
+                              location = "group:digital_pen_low_battery.png">
+                           </FileRef>
+                           <FileRef
+                              location = "group:digital_pen_positioning_problem.png">
+                           </FileRef>
+                           <FileRef
+                              location = "group:digital_pen_background_side_channel.png">
+                           </FileRef>
+                        </Group>
+                        <Group
+                           location = "group:values-mcc311-mnc480"
+                           name = "values-mcc311-mnc480">
+                           <FileRef
+                              location = "group:config.xml">
+                           </FileRef>
+                        </Group>
+                        <Group
+                           location = "group:values-mcc460-mnc11"
+                           name = "values-mcc460-mnc11">
+                           <FileRef
+                              location = "group:config.xml">
+                           </FileRef>
+                        </Group>
+                        <Group
+                           location = "group:values-mcc310-mnc260"
+                           name = "values-mcc310-mnc260">
+                           <FileRef
+                              location = "group:config.xml">
+                           </FileRef>
+                        </Group>
+                        <Group
+                           location = "group:values-mcc460-mnc03"
+                           name = "values-mcc460-mnc03">
+                           <FileRef
+                              location = "group:config.xml">
+                           </FileRef>
+                        </Group>
+                     </Group>
+                  </Group>
+               </Group>
+            </Group>
+         </Group>
+      </Group>
+   </Group>
+   <Group
+      location = "group:display"
+      name = "display">
+      <Group
+         location = "group:tools"
+         name = "tools">
+         <FileRef
+            location = "group:panel_nt35590_720p_cmd.xml">
+         </FileRef>
+         <FileRef
+            location = "group:platform-msm8610.xml">
+         </FileRef>
+         <FileRef
+            location = "group:parser.pl">
+         </FileRef>
+         <FileRef
+            location = "group:README.txt">
+         </FileRef>
+         <FileRef
+            location = "group:panel_nt35596_1080p_video.xml">
+         </FileRef>
+      </Group>
+   </Group>
+   <Group
+      location = "group:dlkm"
+      name = "dlkm">
+      <FileRef
+         location = "group:AndroidKernelModule.mk">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:dtbtool"
+      name = "dtbtool">
+      <FileRef
+         location = "group:Android.mk">
+      </FileRef>
+      <FileRef
+         location = "group:dtbtool.txt">
+      </FileRef>
+      <FileRef
+         location = "group:dtbtool.c">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:generate_extra_images.mk">
+   </FileRef>
+   <Group
+      location = "group:init"
+      name = "init">
+      <FileRef
+         location = "group:Android.mk">
+      </FileRef>
+      <FileRef
+         location = "group:init_apq8084.c">
+      </FileRef>
+      <FileRef
+         location = "group:init_msm.h">
+      </FileRef>
+      <FileRef
+         location = "group:init_msm8909.c">
+      </FileRef>
+      <FileRef
+         location = "group:init_msm8994.c">
+      </FileRef>
+      <FileRef
+         location = "group:init_msmdefault.c">
+      </FileRef>
+      <FileRef
+         location = "group:init_msm8916.c">
+      </FileRef>
+      <FileRef
+         location = "group:init_msm8226.c">
+      </FileRef>
+      <FileRef
+         location = "group:init_msm8974.c">
+      </FileRef>
+      <FileRef
+         location = "group:init_msm8610.c">
+      </FileRef>
+      <FileRef
+         location = "group:init_msm8960.c">
+      </FileRef>
+      <FileRef
+         location = "group:init_msm.c">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:media"
+      name = "media">
+      <FileRef
+         location = "group:media_profiles.xml">
+      </FileRef>
+      <FileRef
+         location = "group:audio_policy.conf">
+      </FileRef>
+      <FileRef
+         location = "group:media_codecs.xml">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:power"
+      name = "power">
+      <FileRef
+         location = "group:utils.h">
+      </FileRef>
+      <FileRef
+         location = "group:power-8226.c">
+      </FileRef>
+      <FileRef
+         location = "group:list.c">
+      </FileRef>
+      <FileRef
+         location = "group:Android.mk">
+      </FileRef>
+      <FileRef
+         location = "group:performance.h">
+      </FileRef>
+      <FileRef
+         location = "group:metadata-parser.c">
+      </FileRef>
+      <FileRef
+         location = "group:power-common.h">
+      </FileRef>
+      <FileRef
+         location = "group:hint-data.h">
+      </FileRef>
+      <FileRef
+         location = "group:power-8610.c">
+      </FileRef>
+      <FileRef
+         location = "group:power-8974.c">
+      </FileRef>
+      <FileRef
+         location = "group:metadata-defs.h">
+      </FileRef>
+      <FileRef
+         location = "group:power.c">
+      </FileRef>
+      <FileRef
+         location = "group:list.h">
+      </FileRef>
+      <FileRef
+         location = "group:utils.c">
+      </FileRef>
+      <FileRef
+         location = "group:hint-data.c">
+      </FileRef>
+      <FileRef
+         location = "group:power-8909.c">
+      </FileRef>
+      <FileRef
+         location = "group:power-8084.c">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:product"
+      name = "product">
+      <Group
+         location = "group:overlay"
+         name = "overlay">
+         <Group
+            location = "group:packages"
+            name = "packages">
+            <Group
+               location = "group:apps"
+               name = "apps">
+               <Group
+                  location = "group:CMFileManager"
+                  name = "CMFileManager">
+                  <Group
+                     location = "group:res"
+                     name = "res">
+                     <Group
+                        location = "group:values"
+                        name = "values">
+                        <FileRef
+                           location = "group:config.xml">
+                        </FileRef>
+                     </Group>
+                  </Group>
+               </Group>
+            </Group>
+         </Group>
+         <Group
+            location = "group:frameworks"
+            name = "frameworks">
+            <Group
+               location = "group:base"
+               name = "base">
+               <Group
+                  location = "group:core"
+                  name = "core">
+                  <Group
+                     location = "group:res"
+                     name = "res">
+                     <Group
+                        location = "group:res"
+                        name = "res">
+                        <Group
+                           location = "group:values"
+                           name = "values">
+                           <FileRef
+                              location = "group:config.xml">
+                           </FileRef>
+                        </Group>
+                     </Group>
+                  </Group>
+               </Group>
+            </Group>
+         </Group>
+      </Group>
+   </Group>
+   <FileRef
+      location = "group:qcom.key">
+   </FileRef>
+   <Group
+      location = "group:recovery"
+      name = "recovery">
+      <FileRef
+         location = "group:Android.mk">
+      </FileRef>
+      <Group
+         location = "group:miniui"
+         name = "miniui">
+         <FileRef
+            location = "group:Android.mk">
+         </FileRef>
+         <FileRef
+            location = "group:qcom_recovery_ui.c">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:oem-recovery"
+         name = "oem-recovery">
+         <FileRef
+            location = "group:dec.h">
+         </FileRef>
+         <FileRef
+            location = "group:Android.mk">
+         </FileRef>
+         <FileRef
+            location = "group:oem-updater.c">
+         </FileRef>
+         <FileRef
+            location = "group:gpt-utils.c">
+         </FileRef>
+         <FileRef
+            location = "group:dec.c">
+         </FileRef>
+         <FileRef
+            location = "group:gpt-utils.h">
+         </FileRef>
+      </Group>
+   </Group>
+   <FileRef
+      location = "group:releasetools.py">
+   </FileRef>
+   <Group
+      location = "group:rootdir"
+      name = "rootdir">
+      <FileRef
+         location = "group:Android.mk">
+      </FileRef>
+      <Group
+         location = "group:etc"
+         name = "etc">
+         <FileRef
+            location = "group:hsic.control.bt.sh">
+         </FileRef>
+         <FileRef
+            location = "group:hcidump.sh">
+         </FileRef>
+         <FileRef
+            location = "group:init.qcom.usb.sh">
+         </FileRef>
+         <FileRef
+            location = "group:init.qcom.class_core.sh">
+         </FileRef>
+         <FileRef
+            location = "group:ueventd.qcom.rc">
+         </FileRef>
+         <FileRef
+            location = "group:init.qcom.early_boot.sh">
+         </FileRef>
+         <FileRef
+            location = "group:init.qcom.syspart_fixup.sh">
+         </FileRef>
+         <FileRef
+            location = "group:init.qcom.fm.sh">
+         </FileRef>
+         <FileRef
+            location = "group:init.qcom.bt.sh">
+         </FileRef>
+         <FileRef
+            location = "group:init.qcom.usb.rc">
+         </FileRef>
+         <FileRef
+            location = "group:init.qcom.uicc.sh">
+         </FileRef>
+         <FileRef
+            location = "group:qca6234-service.sh">
+         </FileRef>
+         <FileRef
+            location = "group:init.qcom.debug.sh">
+         </FileRef>
+         <FileRef
+            location = "group:init.qcom.rc">
+         </FileRef>
+         <FileRef
+            location = "group:init.qti.ims.sh">
+         </FileRef>
+         <FileRef
+            location = "group:init.crda.sh">
+         </FileRef>
+         <FileRef
+            location = "group:init.qcom.zram.sh">
+         </FileRef>
+         <FileRef
+            location = "group:init.qcom.bms.sh">
+         </FileRef>
+         <FileRef
+            location = "group:init.qcom.coex.sh">
+         </FileRef>
+         <FileRef
+            location = "group:init.ath3k.bt.sh">
+         </FileRef>
+         <FileRef
+            location = "group:init.qcom.post_boot.sh">
+         </FileRef>
+         <FileRef
+            location = "group:init.qcom.ssr.sh">
+         </FileRef>
+         <FileRef
+            location = "group:init.qcom.sdio.sh">
+         </FileRef>
+         <FileRef
+            location = "group:init.class_main.sh">
+         </FileRef>
+         <FileRef
+            location = "group:init.mdm.sh">
+         </FileRef>
+         <FileRef
+            location = "group:init.qcom.wifi.sh">
+         </FileRef>
+         <FileRef
+            location = "group:init.qcom.audio.sh">
+         </FileRef>
+         <FileRef
+            location = "group:init.qcom.sh">
+         </FileRef>
+         <FileRef
+            location = "group:init.qcom.factory.rc">
+         </FileRef>
+         <FileRef
+            location = "group:init.qcom.efs.sync.sh">
+         </FileRef>
+      </Group>
+   </Group>
+   <FileRef
+      location = "group:sec_config">
+   </FileRef>
+   <Group
+      location = "group:sepolicy"
+      name = "sepolicy">
+      <FileRef
+         location = "group:netd.te">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:tools"
+      name = "tools">
+      <FileRef
+         location = "group:list_clks.sh">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:utils.mk">
+   </FileRef>
+   <FileRef
+      location = "group:vendorsetup.sh">
+   </FileRef>
+</Workspace>

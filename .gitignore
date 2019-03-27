@@ -1,0 +1,5 @@
+.settings/
+xcuserdata/
+*.iml
+*.DS_Store
+version.cpp
