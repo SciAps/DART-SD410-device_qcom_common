@@ -252,7 +252,7 @@ on mmi
     # ========================================================
 
     #mount sdcard by default
-    mount vfat /dev/block/mmcblk1p1 /storage/sdcard1
+    mount vfat /dev/block/mmcblk1p1 /storage/sdcard0
 
     #mkdir for factory data files.
     mkdir /cache/FTM_AP 0750 root root
