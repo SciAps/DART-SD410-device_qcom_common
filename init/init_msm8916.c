@@ -42,6 +42,7 @@
 void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *board_type)
 {
     char platform[PROP_VALUE_MAX];
+    char sciaps_hw[PROP_VALUE_MAX];
     int rc;
     unsigned long virtual_size = 0;
     char str[BUF_SIZE];
@@ -53,6 +54,19 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
     if (!rc || !ISMATCH(platform, ANDROID_TARGET)){
         return;
     }
+	sciaps_hw[0] = 0;
+	rc = property_get("ro.boot.sciaps-hardware", sciaps_hw);
+	{
+		//INFO("%s: ro.boot.sciaps-hardware: %s; rc: %d\n", __func__, sciaps_hw, rc);
+		if(ISMATCH(sciaps_hw, "ngx")) {
+			//INFO("%s: setting ro.product.model to : %s\n", __func__, sciaps_hw);
+			property_set("ro.product.model", "NGX");
+		}
+		else if (ISMATCH(sciaps_hw, "ngl")) {
+			//INFO("%s: setting ro.product.model to : %s\n", __func__, sciaps_hw);
+			property_set("ro.product.model", "NGL");
+		}
+	}
 
     rc = read_file2(VIRTUAL_SIZE, str, sizeof(str));
     if (rc) {
@@ -65,17 +79,26 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
             property_set(PROP_QEMU_NAVKEY, "0");
         } else
             property_set(PROP_LCDDENSITY, "480");
+    } else if (virtual_size >= 1024) {
+        // For 1024x600 7in display
+        property_set(PROP_LCDDENSITY, "160");
+        property_set(PROP_LCDPERSIST_ORIENTATION,"0");
     } else if (virtual_size >= 720) {
-        // For 720x1280 resolution
         property_set(PROP_LCDDENSITY, "160");
         property_set(PROP_QEMU_NAVKEY, "1");
-	property_set(PROP_LCDPERSIST_ORIENTATION,"270");
+        //property_set(PROP_LCDPERSIST_ORIENTATION,"270");
     } else if (virtual_size >= 480) {
-        // For 480x854 resolution QRD.
+        // For 480x800 3.5in display
         property_set(PROP_LCDDENSITY, "240");
-    } else
-        property_set(PROP_LCDDENSITY, "320");
-
+        property_set(PROP_LCDPERSIST_ORIENTATION,"0");
+    } else if (virtual_size >= 240) {
+        // For 240x320 2.7in display
+        property_set(PROP_LCDDENSITY, "120");
+        property_set(PROP_LCDPERSIST_ORIENTATION,"0");
+    } else {
+        property_set(PROP_LCDDENSITY, "120");
+        property_set(PROP_QEMU_NAVKEY, "1");
+    }
     if (msm_id >= 239 && msm_id <= 243) {
         property_set("media.msm8939hw", "1");
     }
