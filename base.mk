@@ -605,43 +605,47 @@ WLAN += pronto_wlan.ko
 
 PRODUCT_PACKAGES := \
     AccountAndSyncSettings \
-    DeskClock \
     AlarmProvider \
     Bluetooth \
-    Calculator \
-    Calendar \
     Camera \
     CellBroadcastReceiver \
     CertInstaller \
     DrmProvider \
-    Email \
-    Gallery2 \
     LatinIME \
     Launcher2 \
-    Mms \
-    Music \
-    Phone \
     Provision \
     Protips \
-    QuickSearchBox \
     Settings \
     Sync \
     SystemUI \
     Updater \
-    CalendarProvider \
     SyncProvider \
     IM \
-    VoiceDialer \
-    FM2 \
-    FMRecord \
     VideoEditor
+
+#PRODUCT_PACKAGES += \
+     DeskClock \
+     Calculator \
+     Calendar \
+     Email \
+     Gallery2 \
+     Mms \
+     Music \
+     Phone \
+     QuickSearchBox \
+     CalendarProvider \
+     VoiceDialer \
+     FM2 \
+     FMRecord
 
 
 ifneq ($(TARGET_USES_AOSP),true)
 PRODUCT_PACKAGES += \
-       BluetoothExt \
-       BTTestApp \
-       HiddTestApp
+       BluetoothExt
+#PRODUCT_PACKAGES += \
+        BluetoothExt \
+        BTTestApp \
+        HiddTestApp
 endif
 
 PRODUCT_PACKAGES += $(ALSA_HARDWARE)
@@ -670,7 +674,7 @@ PRODUCT_PACKAGES += $(E2FSPROGS)
 PRODUCT_PACKAGES += $(EBTABLES)
 PRODUCT_PACKAGES += $(EXTENDEDMEDIA_EXT)
 PRODUCT_PACKAGES += $(FASTPOWERON)
-PRODUCT_PACKAGES += $(FM)
+#PRODUCT_PACKAGES += $(FM)
 PRODUCT_PACKAGES += $(GPS_HARDWARE)
 PRODUCT_PACKAGES += $(HDMID)
 PRODUCT_PACKAGES += $(HOSTAPD)
